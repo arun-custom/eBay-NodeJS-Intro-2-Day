@@ -83,39 +83,9 @@ app.get("/greet/:name/:lastname", function(req, res) {
 ## Let's Talk About Templates
 - Templates allow you to create dynamic HTML views that are reused for various sets of data.
 - Handlebars is the templating engine we will use in our Node applications.
+- We will be using a plugin called [express-handlebars](https://github.com/ericf/express-handlebars).
 
 ####Example Hello World Using Handlebars
-
-app.js
-
-```javascript
-var express = require("express");
-var app = express();
-
-app.set("view engine", "ejs");
-
-app.get('/', function(req, res) {
-	res.render("index.ejs", {
-		greeting: "Hello World"
-	});
-});
-
-app.listen(3000);
-```
-
-views/index.ejs
-
-```javascript
-<h1>Testing out EJS</h1>
-
-<h2>Greeting is: <%= greeting %></h2>
-
-<div style="margin-top:50px;">
-	<% for (var i = 0; i < 5; i++) { %>
-		<h5>Repeated Text</h5>
-	<% } %>
-</div>
-```
 
 ## Making Calls to Web Services
 - On the client side we have AJAX, on the server side we have cURL.
