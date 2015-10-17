@@ -85,7 +85,10 @@ app.get("/greet/:name/:lastname", function(req, res) {
 - Handlebars is the templating engine we will use in our Node applications.
 - We will be using a plugin called [express-handlebars](https://github.com/ericf/express-handlebars).
 
-####Example Hello World Using Handlebars
+## Using Handlebars Templates
+- Handlebars templates are referenced from the `views` directory.
+- Unless specified, the templates are rendered inside of a layout with the `{{{body}}}` designation.
+- Let's go through [this tutorial](https://github.com/ericf/express-handlebars) to try a sample application using Handlebars as the view engine.
 
 ## Making Calls to Web Services
 - On the client side we have AJAX, on the server side we have cURL.
@@ -177,7 +180,7 @@ app.post("/user", function(req, res) {
 - PUT requests are normally mapped over to update actions.
 - According to the convention, since PUT is mapped over to an update action, an ID needs to be passed to reference the data object.
 
-```
+```javascript
 var methodOverride = require("method-override");
 
 app.use(methodOverride("_method"));

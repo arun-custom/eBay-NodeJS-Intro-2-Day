@@ -212,3 +212,12 @@ gulp.task("scripts", function() {
 gulp.task("default", ["scripts"]);
 ```
 
+## Authentication with Passport
+- [PassportJS](http://passportjs.org/) is a tool that allows you to authenticate users to your application through a variety of ways.
+- The module supports a large variety of what are known as "strategies" to authenticate a user differently.
+- Let's have a look at the documentation to see the variety of strategies available.
+
+## OpenID Authentication with Passport
+- The OpenID authentication strategy authenticates users using an OpenID identifier.
+- The strategy requires a `validate` callback, which accepts this identifier and calls a `done` method providing a user.
+- We will see a demonstration of Passport using OpenID from the sample application listed in the documentation [here](https://github.com/jaredhanson/passport-openid).
