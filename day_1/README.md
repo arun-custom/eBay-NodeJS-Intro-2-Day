@@ -110,7 +110,7 @@ request('http://www.google.com', function (error, response, body) {
 
 ## Request Exercise
 - Create a new Node app using `npm init`.
-- Set up EJS as your templating engine.
+- Set up Handlebars as your templating engine.
 - Make a request out to facebook.com and place the response body inside a template. Hint: Think about which template syntax to use for this.
 
 ## Using JSON
